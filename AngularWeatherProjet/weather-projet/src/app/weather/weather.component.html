@@ -1,0 +1,38 @@
+<section  class="vh-100 " style="background-color: #f0f0f3; ">
+  <div class="container py-5 h-100" >
+
+    <div class="row d-flex justify-content-start align-items-tops h-100 " >
+      <div class="col-md-8 col-lg-6 col-xl-4">
+
+        <div class="card rounded-0" style="color: #252529; background-color: #c1cae0; " >
+          <div class="card-body p-4" >
+
+            <div class="d-flex" >
+              <h6 class="flex-grow-1 fw-bold " >{{weat.city.name}}</h6>
+              <h6 class="d-flex" style="color: #1C2331;">{{weat.city.country}}</h6>  
+            </div>
+
+            <div class="d-flex flex-column text-center mt-5 mb-4">
+              <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;">{{weat.list[0].main.temp.toFixed()}}°C</h6>
+              <span class="small" style="color: #0e0f0f">{{weat.list[0].weather[0].description}}</span>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1" style="font-size: 1rem;">
+                <div><i class="fas fa-sun fa-fw" style="color: #0e0f0f;">Nem : %{{weat.list[0].main.humidity.toFixed()}}</i> <span class="ms-1">  </span></div>
+                <div><i class="fas fa-sun fa-fw" style="color: #0e0f0f;">Max Sıcaklık : {{weat.list[0].main.temp_max.toFixed()}} °C</i> <span class="ms-1">  </span></div>
+                <div><i class="fas fa-sun fa-fw" style="color: #0e0f0f;">Min Sıcaklık : {{weat.list[0].main.temp_min.toFixed()}} °C</i> <span class="ms-1">  </span></div>
+              </div>
+              <div>
+                <img src="http://openweathermap.org/img/wn/{{weat.list[0].weather[0].icon}}.png" width="100px">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
