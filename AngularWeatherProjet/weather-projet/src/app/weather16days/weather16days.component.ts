@@ -13,6 +13,7 @@ export class Weather16daysComponent implements OnInit {
 
   constructor(private weatherService:WeatherService) { }
   weat!:weat;
+  days=['Salı',"çarşamba","perşembe","Cuma","Cumartesi","Pazar",'pazartesi']
   ngOnInit() {
 
     this.weatherService.getDetailWeather().subscribe(data=>{
