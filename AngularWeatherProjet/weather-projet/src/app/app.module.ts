@@ -1,5 +1,4 @@
 import { ServerPostComponent } from './serverPost/serverPost/serverPost.component';
-import { ValuesComponent } from './updateValues/values/values.component';
 import { UserServerComponent } from './getServer/userServer/userServer.component';
 import { AuthGuardService } from './services/auth/authGuard.service';
 import { LoginComponent } from './login/login/login.component';
@@ -27,7 +26,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Weather16daysComponent,
     LoginComponent,
     UserServerComponent,
-    ValuesComponent,
     ServerPostComponent
    
   ],

@@ -1,5 +1,4 @@
 import { ServerPostComponent } from './serverPost/serverPost/serverPost.component';
-import { ValuesComponent } from './updateValues/values/values.component';
 import { AuthGuardService } from './services/auth/authGuard.service';
 import { LoginComponent } from './login/login/login.component';
 import { Weather16daysComponent } from './weather16days/weather16days.component';
@@ -12,7 +11,6 @@ export const appRoutes :Routes =[
     {path:"sayfaiki",component:Weather16daysComponent,canActivate:[AuthGuardService]},
     {path:"login",component:LoginComponent},
     {path:"getserver",component:UserServerComponent},
-    {path:"update",component:ValuesComponent},
     {path:"serverPost",component:ServerPostComponent},
     {path:"**",redirectTo:"login",pathMatch:"full"}
 ];
