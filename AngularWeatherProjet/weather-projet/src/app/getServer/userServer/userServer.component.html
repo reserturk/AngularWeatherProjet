@@ -1,0 +1,27 @@
+  <table class="table" *ngIf="serverList && serverList.Server.length">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Ad Soyad</th>
+        <th scope="col">Şirket</th>
+        <th scope="col">Status</th>
+        <th scope="col">Sunucu Adı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let s of serverList.Server">
+
+  <tr>
+    <td>{{s.Id}}</td>
+    <td>{{s.SavedByName}}</td>
+    <td>{{s.Customer}}</td>
+    <td>{{s.Status}}</td>
+    <td>{{s.Name}}</td>
+  </tr>
+ 
+   
+
+</ng-container>
+    </tbody>
+  </table>
+
