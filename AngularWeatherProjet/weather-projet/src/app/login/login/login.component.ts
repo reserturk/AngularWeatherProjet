@@ -28,7 +28,7 @@ login(form:NgForm){
   if (form.valid) {
     this.lts.login(this.loginUser);
     this.alertifyService.success("Sisteme giriş yapıldı");
-    this.router.navigateByUrl('sayfabir');
+    this.router.navigateByUrl('getServer');
   }
  
   

@@ -1,5 +1,4 @@
 import { Values } from './../../models/values/values';
-import { ServerPostModel } from './../../models/serverPostModel/serverPostModel';
 import { FormControl, FormGroup,Validators,FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
@@ -10,7 +9,6 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
   styleUrls: ['./serverPost.component.css']
 })
 export class ServerPostComponent implements OnInit {
-  serverPostModel!:ServerPostModel
   serverPostGroup!:FormGroup
   
   path = new URL('https://apistb.appivot.com/api/Values/')
